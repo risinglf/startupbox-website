@@ -30,6 +30,9 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
+    bson (1.8.5)
+    bson_ext (1.8.5)
+      bson (~> 1.8.5)
     builder (3.0.4)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -65,7 +68,14 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.22)
+    mongoid (3.0.17)
+      activemodel (~> 3.1)
+      moped (~> 1.2)
+      origin (~> 1.0)
+      tzinfo (~> 0.3.22)
+    moped (1.2.9)
     multi_json (1.7.2)
+    origin (1.0.11)
     orm_adapter (0.4.0)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -128,11 +138,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bson_ext
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails
   json
   less-rails
+  mongoid (~> 3.0.0)
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
   sqlite3
