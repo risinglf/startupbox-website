@@ -88,6 +88,10 @@
       margin-top: 10px;
     }
 
+    img {
+      width: 100%;
+    }
+
 
 
     /* CUSTOMIZE THE CAROUSEL
@@ -95,7 +99,7 @@
 
     /* Carousel base class */
     .carousel {
-      margin-bottom: 60px;
+ 
     }
 
     .carousel .container {
@@ -166,7 +170,7 @@
       margin: 80px 0; /* Space out the Bootstrap <hr> more */
     }
     .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+       /* Vertically center images part 1: add padding above and below text. */
       overflow: hidden; /* Vertically center images part 2: clear their floats. */
     }
     .featurette-image {
@@ -175,10 +179,10 @@
 
     /* Give some space on the sides of the floated elements so text doesn't run right into it. */
     .featurette-image.pull-left {
-      margin-right: 40px;
+
     }
     .featurette-image.pull-right {
-      margin-left: 40px;
+
     }
 
     /* Thin out the marketing headings */
@@ -192,10 +196,29 @@
     #footer {
       position: relative;
       min-width: 100%;
-      height: 300px;
-      margin-top: 40px;
-      background-color: #ffffff
+      margin-top: -2px; 
+    }
 
+    #content1 {
+      position: relative;
+      min-width: 100%;
+      margin-top: -95px;
+    }
+
+    #content2 {
+      position: relative;
+      min-width: 100%;
+      z-index: 20
+    }
+
+    #content3 {
+      position: relative;
+      min-width: 100%;
+      margin-top: -2px;
+    }
+
+    #left-arrow {
+      background-image:url('/app/assets/images/leftarrow.png');
     }
 
 
@@ -297,41 +320,6 @@
   </head>
 
   <body>
-
-
-
-    <!-- NAVBAR
-    ================================================== -->
-    <div class="navbar-wrapper">
-      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-      <div class="container">
-
-        <div class="navbar navbar-inverse">
-          <div class="navbar-inner">
-            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="#">Startup Box</a>
-            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
-                
-              </ul>
-              <p class="notice"><%= notice %></p>
-       <!--<p class="alert"><%= alert %></p>-->
-            </div><!--/.nav-collapse -->
-          </div><!-- /.navbar-inner -->
-        </div><!-- /.navbar -->
-
-      </div> <!-- /.container -->
-    </div><!-- /.navbar-wrapper -->
 
 
     <%= yield %>
